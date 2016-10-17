@@ -1,0 +1,129 @@
+/* Colors */
+$base: lighten(#d2e1dd, 5%)
+$accent-color: #E8117F
+$midnight-blue: #036
+
+/* Custom Style Sheet */
+
+body
+    background: $base
+
+h1, h2, h3, h4, h5
+    font-family: 'Bungee Inline', cursive
+
+p
+    font-family: 'Open Sans', sans-serif
+
+#head-container
+    position: relative
+    background-image: url(../img/keyboard-bg.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 450px
+    max-width: 100%
+
+.header-nav
+    position: relative
+    padding: 15px 25px
+    height: 40px
+
+    .nav-items
+        margin: 0 auto
+        float: right
+        position: relative
+        font-family: 'Open Sans', sans-serif
+        font-size: .8em
+        text-transform: uppercase
+        letter-spacing: .1em
+        color: $base
+        li, a
+            padding-top: 10px
+            list-style-type: none
+            display: inline-block
+            line-height: 25px
+            color: $base
+        li, a:nth-child(1n+2)
+            margin-left: 15px
+        li:hover
+            border-bottom: 2px solid $base
+
+    .header-logo
+        display: inline-block
+        margin-top: 10px
+
+        h1
+            margin: 0
+            font-family: 'Bungee Inline', cursive
+            font-size: 1.8em
+            letter-spacing: .1em
+        a
+            text-decoration: none
+            color: $base
+        a h1:hover
+            color: darken($base, 10%)
+
+    .welcome-msg
+        color: $base
+        display: block
+        margin: 100px auto 15px auto
+        text-align: center
+        max-width: 80%
+        font-size: 1.4em
+        letter-spacing: .14em
+        h2
+            margin: 0
+        p
+            font-size: .8em
+            text-transform: uppercase
+        span::after
+            content: "▼"
+
+.main-btn
+    margin: 0 auto
+    display: block
+    position: relative
+    width: 8em
+    border: 2px solid $base
+    border-radius: 25px
+    padding: .8em
+    font-size: .9em
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none
+    color: $base
+    background: rgba($base, .2)
+    transition: all .2s ease-in-out
+
+
+.main-btn:hover
+    background: rgba($base, .5)
+    transform: scale(1.06)
+
+//About Section
+
+.headline
+    margin-bottom: 0
+    display: block
+    text-align: center
+    position: relative
+    color: rgba(0, 0, 0, .7)
+    width: 100%
+.about
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    position: relative
+    height: 150px
+    width: 80%
+    padding: 10px
+
+    .circle
+        margin: 20px auto
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: nowrap
+        border-radius: 100%
+        background-color: $accent-color
+        width: 150px
+        height: 150px
